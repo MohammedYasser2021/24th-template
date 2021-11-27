@@ -1,0 +1,110 @@
+body{
+    overflow: auto;
+}
+/* start about us page */
+.breadcrumb-holder{
+    background-color: #eee;
+}
+.breadcrumb{
+    padding: 10px 0;
+    margin: 0;
+}
+.breadcrumb li{
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-us h1{
+    letter-spacing: -2px;
+    font-size: 42px;
+}
+.about-us hr{
+    width: 70%
+}
+
+.about-features{
+    background-color: #eee;
+}
+.about-features h2{
+    margin-bottom: 50px;
+}
+.about-features .feature{
+    margin-bottom: 30px;
+}
+.about-features .feature h3{
+    letter-spacing: -1px;
+}
+.about-features .feature i {
+    color: var(--main-color)
+}
+@media (max-width: 767px) {
+    .about-features .feature h3{
+        font-size: 18px;
+    }
+}
+.about-ceo{
+    padding: 50px 0 0 
+}
+@media (max-width: 767px) {
+    .about-ceo{
+        text-align: center;
+        padding: 50px 0 
+    }
+}
+.about-ceo .lead{
+    line-height: 1.7;
+}
+@media (max-width: 767px) {
+    .about-ceo .row > div:nth-of-type(1){
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 768px){
+    .about-ceo .row > div:nth-of-type(2){
+        padding: 0 0 50px
+    }
+}
+@media (max-width: 767px) {
+    .about-ceo h2{
+        font-size: 20px;
+    }
+}
+.about-ceo .btn-primary{
+    background-color: #333;
+    border-color: #333;
+}
+@media (max-width: 767px) {
+    .about-ceo .btn-primary{
+        display: block;
+    }
+}
+
+/* end about us page */
+
+/* start faq page */
+.faq h1{
+    letter-spacing: -1px;
+    font-size: 50px;
+}
+.faq h1 ~ hr{
+    width: 70%
+}
+.faq-questions .panel-heading a::after{
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    color: #444;
+}
+.faq-questions .panel-heading a:not(a.collapsed){
+    color:darkblue;
+    font-weight: bold;
+}
+.faq-questions .panel-heading a.collapsed::after{
+    content: "\e080";
+    color: #aaa
+}
+@media (max-width: 767px){
+    .faq h1{
+        font-size: 22px;
+    }
+}
+/* end faq page */
